@@ -54,6 +54,23 @@ node --version
 npm --version
 ```
 
+If you have trouble with any of these, learn more about the PATH environment
+variable and how to fix it here for [windows][win-path] or
+[mac/linux][mac-path].
+
+## Setup
+
+You may be able to work through the entire workshop in the browser. It requires
+absolutely no setup whatsoever, though people do sometimes have trouble with it
+working perfectly. However, if you would like to try it, go to
+[this codesandbox](https://codesandbox.io/s/github/Khaledgarbaya/cra-to-gatsby-workshop)
+and you should be good to go.
+
+[![Edit cra-to-gatsby-workshop](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Khaledgarbaya/cra-to-gatsby-workshop)
+
+If you'd rather be able to work through the workshop on your own computer, then
+follow the following instructions.
+
 ## Installing dependencies
 
 ```sh
@@ -133,3 +150,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!-- prettier-ignore-start -->
+[npm]: https://www.npmjs.com/
+[node]: https://nodejs.org
+[git]: https://git-scm.com/
+[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
+[mac-path]: http://stackoverflow.com/a/24322978/971592
+<!-- prettier-ignore-end -->
