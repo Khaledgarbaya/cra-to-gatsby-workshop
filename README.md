@@ -63,7 +63,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2020 [Khaled Garbaya <kgarbaya@gmail.com>](https://github.com/Khaledgarbaya).<br />
-This project is [MIT](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/blob/master/LICENSE) licensed.
+This project is [GNU General Public License v3.0](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
