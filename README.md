@@ -8,13 +8,13 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained-yes-green.svg" />
   </a>
   <a href="https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Khaledgarbaya/Moving from create-react-app to Gatsby" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/Khaledgarbaya/cra-to-gatsby-workshop" />
   </a>
-  <a href="https://twitter.com/khaled\_garbaya" target="_blank">
-    <img alt="Twitter: khaled\_garbaya" src="https://img.shields.io/twitter/follow/khaled\_garbaya.svg?style=social" />
+  <a href="https://twitter.com/khaled_garbaya" target="_blank">
+    <img alt="Twitter: khaled_garbaya" src="https://img.shields.io/twitter/follow/khaled_garbaya.svg?style=social" />
   </a>
 </p>
 
