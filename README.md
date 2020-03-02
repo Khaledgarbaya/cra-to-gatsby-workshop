@@ -20,33 +20,78 @@
 
 > This is a workshop repo to teach you about migrating a create-react-app project to Gatsby
 
-### 🏠 [Homepage](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop#readme)
+## Pre-Workshop Instructions/Requirements
 
-## Install
+- [ ] Setup the project (follow the setup instructions below) (~5 minutes)
+- [ ] 📺 Install and setup [Zoom](https://zoom.us) on the computer you will be using (~5 minutes)
+
+- [ ] 📺 watch My [Migrate from Create-React-App to Gatsby - Start Project](https://egghead.io/playlists/migrate-from-create-react-app-to-gatsby-prerequisite-a766)
+
+## Workshop Outline
+
+Here are the topics that we are going to cover:
+
+- Setup a Gatsby project
+- Create Static Pages in Gatsby
+- Create Static Pages programtically in Gatsby
+- Create client only routes in Gatsby
+- How to use plugins with Gatsby
+- Breakdown a CRA app routes into static and client side pages
+- Breakdown content transformations in a CRA app
+- Use React Context with Gatsby
+
+## System Requirements
+
+- [git][git] v2 or greater
+- [NodeJS][node] v10 or greater
+- [npm][npm] v5.2.0 or greater
+
+All of these must be available in your `PATH`. To verify things are set up properly, you can run this:
+
+```shell
+git --version
+node --version
+npm --version
+```
+
+## Installing dependencies
 
 ```sh
 npm install
 ```
 
-## Usage
+## Running the app
 
 ```sh
 npm run develop
 ```
 
-## Run tests
+## Running the tests
 
 ```sh
 npm run test
 ```
 
+## Troubleshooting
+
+<details>
+
+<summary>"npm run develop" command not working</summary>
+
+Please read through the error message and identify the step that is failing.
+There should be an error message that will hopefully help guide you to the
+solution. If it doesn't, please copy and past _all_ of the output into a new
+issue on the project repository.
+
+</details>
+
 ## Author
 
 👤 **Khaled Garbaya <kgarbaya@gmail.com>**
 
-* Website: https://khaledgarbaya.net
-* Twitter: [@khaled\_garbaya](https://twitter.com/khaled\_garbaya)
-* Github: [@Khaledgarbaya](https://github.com/Khaledgarbaya)
+- Website: https://khaledgarbaya.net
+- Twitter: [@khaled_garbaya](https://twitter.com/khaled_garbaya)
+- Github: [@Khaledgarbaya](https://github.com/Khaledgarbaya)
 
 ## 🤝 Contributing
 
@@ -65,8 +110,10 @@ Give a ⭐️ if this project helped you!
 Copyright © 2020 [Khaled Garbaya <kgarbaya@gmail.com>](https://github.com/Khaledgarbaya).<br />
 This project is [GNU General Public License v3.0](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -82,6 +129,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
