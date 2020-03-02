@@ -76,7 +76,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://khaledgarbaya.net"><img src="https://avatars1.githubusercontent.com/u/1156093?v=4" width="100px;" alt=""/><br /><sub><b>Khaled Garbaya</b></sub></a><br /><a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Code">💻</a></td>
+    <td align="center"><a href="https://khaledgarbaya.net"><img src="https://avatars1.githubusercontent.com/u/1156093?v=4" width="100px;" alt=""/><br /><sub><b>Khaled Garbaya</b></sub></a><br /><a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Code">💻</a> <a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Documentation">📖</a> <a href="#infra-Khaledgarbaya" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
