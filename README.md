@@ -31,13 +31,13 @@
 
 Here are the topics that we are going to cover:
 
-- Setup a Gatsby project ([Start](tree/master/lessons/01-setup-gatsby-project/start/) - [Finish](tree/master/lessons/01-setup-gatsby-project/finish/))
-- Create Static Pages in Gatsby ([Start](tree/master/lessons/02-create-static-pages/start/) - [Finish](tree/master/lessons/02-create-static-pages/finish/))
-- Create client only routes in Gatsby ([Start](tree/master/lessons/03-create-client-only-routes/start/) - [Finish](tree/master/lessons/03-create-client-only-routes/finish/))
-- How to use plugins with Gatsby ([Start](tree/master/lessons/04-use-plugins/start/) - [Finish](tree/master/lessons/04-use-plugins/finish/))
-- Breakdown a CRA app routes into static and client side pages ([Start](tree/master/lessons/05-breakdown-cra-routes/start/) - [Finish](tree/master/lessons/05-breakdown-cra-routes/finish/))
-- Breakdown content transformations in a CRA app ([Start](tree/master/lessons/06-content-transformation-from-cra-to-gatsby/start/) - [Finish](tree/master/lessons/06-content-transformation-from-cra-to-gatsby/finish/))
-- Use React Context with Gatsby ([Start](tree/master/lessons/07-migrate-react-context/start/) - [Finish](tree/master/lessons/07-migrate-react-context/finish/))
+- Setup a Gatsby project ([Start](/lessons/01-setup-gatsby-project/start/) - [Finish](/lessons/01-setup-gatsby-project/finish/))
+- Create Static Pages in Gatsby ([Start](/lessons/02-create-static-pages/start/) - [Finish](/lessons/02-create-static-pages/finish/))
+- Create client only routes in Gatsby ([Start](/lessons/03-create-client-only-routes/start/) - [Finish](/lessons/03-create-client-only-routes/finish/))
+- How to use plugins with Gatsby ([Start](/lessons/04-use-plugins/start/) - [Finish](/lessons/04-use-plugins/finish/))
+- Breakdown a CRA app routes into static and client side pages ([Start](/lessons/05-breakdown-cra-routes/start/) - [Finish](/lessons/05-breakdown-cra-routes/finish/))
+- Breakdown content transformations in a CRA app ([Start](/lessons/06-content-transformation-from-cra-to-gatsby/start/) - [Finish](/lessons/06-content-transformation-from-cra-to-gatsby/finish/))
+- Use React Context with Gatsby ([Start](/lessons/07-migrate-react-context/start/) - [Finish](/lessons/07-migrate-react-context/finish/))
 
 ## System Requirements
 
