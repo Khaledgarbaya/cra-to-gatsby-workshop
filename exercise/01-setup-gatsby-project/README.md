@@ -70,6 +70,6 @@ export default IndexPage
 To run the project you add an npm script in you package.js to run `gatsby develop`.
 Your job will be to create the simplest gatsby project manually from scratch inside the `start` folder using the information provided.The end result will be a project where you can run `npm run develop` and navigate to `localhost:8000` to `Hello World!` printed out.
 
-- > 💡 You can always check [the Gatsby documentation for the project structure](https://www.gatsbyjs.org/docs/gatsby-project-structure/)
+- > 💡 You can always check the Gatsby [docs](https://www.gatsbyjs.org/docs/gatsby-project-structure/) for the project structure
 
 - > 💡 You can check the npm [docs](https://docs.npmjs.com/cli/init) about initializing an npm project
