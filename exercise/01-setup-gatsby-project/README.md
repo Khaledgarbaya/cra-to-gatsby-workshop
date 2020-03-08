@@ -1,5 +1,5 @@
 <h1 align="center">01 Bootstrap the simplest gatsby project</h1>
-
+ 
 > Create a simple Gatsby project manually from scratch
 
 ## Gatsby Project Structure

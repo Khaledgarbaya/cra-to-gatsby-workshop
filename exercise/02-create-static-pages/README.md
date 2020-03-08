@@ -1,70 +1,61 @@
-<h1 align="center">02 Create Static pages</h1>
+<h1 align="center">02 Create Static pages in Gatsby</h1>
 
-> Setup the simplest Gatsby project
+> Create a static page in Gatsby
 
-## System Requirements
+## Create a static page in Gatsby
 
-- [git][git] v2 or greater
-- [NodeJS][node] v10 or greater
-- [npm][npm] v5.2.0 or greater
+Gatsby pages are created in different ways:
 
-All of these must be available in your `PATH`. To verify things are set up properly, you can run this:
+- Gatsby core automatically turns React components in `src/pages` into pages
+- Creating Pages programatically using the `createPages` API in your site's `gatsby-node.js`
+- Using a Plugin That implement the `createPages` API
 
-```shell
-git --version
-node --version
-npm --version
+## How to list all the pages in a Gatsby site
+
+Gatsby will spawn a GraphQL server along with your dev server and you can use that to list all pages.
+Navigate to `HOST:PORT/___graphql` e.g `localhost:8000/___graphql` and past the following query.
+
+```graphql
+{
+  allSitePage {
+    edges {
+      node {
+        path
+        component
+        pluginCreator {
+          name
+          pluginFilepath
+        }
+      }
+    }
+  }
+}
 ```
 
-If you have trouble with any of these, learn more about the PATH environment
-variable and how to fix it here for [windows][win-path] or
-[mac/linux][mac-path].
+## Exercise
 
-## Setup
+Your job will be to add two new pages to your Gatsby project.
 
-You may be able to work through the entire workshop in the browser. It requires
-absolutely no setup whatsoever, though people do sometimes have trouble with it
-working perfectly. However, if you would like to try it, go to
-[this codesandbox (TODO)](todo)
+An About Page
 
-If you'd rather be able to work through the workshop on your own computer, then
-follow the following instructions.
+```js
+import React from 'react'
 
-## Installing dependencies
+const AboutPage = () => <h1>About Page</h1>
 
-```sh
-npm install
+export default AboutPage
 ```
 
-## Running the app
+A Policy Page
 
-```sh
-npm run develop
+```js
+import React from 'react'
+
+const PolicyPage = () => <h1>Policy Page</h1>
+
+export default PolicyPage
 ```
 
-## Instruction
+After that run the command `npm run develop` and navigate to `HOST:PORT/about` or `HOST:PORT/policy` e.g `localhost:8000/about` and you should see a page displaying `About Page`
 
-- Step 1
-- Step 2
-- more...
-
-## Troubleshooting
-
-<details>
-
-<summary>"npm run develop" command not working</summary>
-
-Please read through the error message and identify the step that is failing.
-There should be an error message that will hopefully help guide you to the
-solution. If it doesn't, please copy and past _all_ of the output into a new
-issue on the project repository.
-
-</details>
-
-<!-- prettier-ignore-start -->
-[npm]: https://www.npmjs.com/
-[node]: https://nodejs.org
-[git]: https://git-scm.com/
-[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
-[mac-path]: http://stackoverflow.com/a/24322978/971592
-<!-- prettier-ignore-end -->
+- > 💡 You can always check the Gatsby [docs](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/) for creating and modifing pages
