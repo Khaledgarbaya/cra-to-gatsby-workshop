@@ -1,70 +1,52 @@
 <h1 align="center">03 Create client only routes</h1>
 
-> Setup the simplest Gatsby project
+> Create pages that only render at runtime in Gatsby
 
-## System Requirements
+Client-only routes will exist on the client only and will not correspond to index.html files in an app’s built assets.
 
-- [git][git] v2 or greater
-- [NodeJS][node] v10 or greater
-- [npm][npm] v5.2.0 or greater
+## How to create a client only page?
 
-All of these must be available in your `PATH`. To verify things are set up properly, you can run this:
+You can do that in two steps:
 
-```shell
-git --version
-node --version
-npm --version
+1. Create a main entry point page manually. In our example we would like to have a few client side pages a `/app/details` page and a `/app/profile` page. Our entry point page should `/app`.
+
+2. Configure Gatsby to navigate to the client only routes.
+
+## Exercise
+
+Create a new page under `src/pages` called `app.js`.
+
+```js
+// src/pages/app.js
+import React from "react"
+import { Router } from "@reach/router"
+
+const App = () => {
+  return (
+    <Layout>
+      <Router basepath="/app">
+        // Add Profile and Details route here
+        // you can use inline components or create ones in seperate files
+        // e.g <MyComponent path='/app/mypath'>
+      </Router>
+    </Layout>
+  )
+}
+export default App
 ```
 
-If you have trouble with any of these, learn more about the PATH environment
-variable and how to fix it here for [windows][win-path] or
-[mac/linux][mac-path].
+Configure Gatsby to navigate to the app page is the path is matching `/app/*`
 
-## Setup
-
-You may be able to work through the entire workshop in the browser. It requires
-absolutely no setup whatsoever, though people do sometimes have trouble with it
-working perfectly. However, if you would like to try it, go to
-[this codesandbox (TODO)](todo)
-
-If you'd rather be able to work through the workshop on your own computer, then
-follow the following instructions.
-
-## Installing dependencies
-
-```sh
-npm install
+```js
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  // Only update the `/app` page.
+  if (page.path.match(/^\/app/)) {
+    // page.matchPath is a special key that's used for matching pages
+    // with corresponding routes only on the client.
+    page.matchPath = '/app/*'
+    // Update the page.
+    createPage(page)
+  }
+}
 ```
-
-## Running the app
-
-```sh
-npm run develop
-```
-
-## Instruction
-
-- Step 1
-- Step 2
-- more...
-
-## Troubleshooting
-
-<details>
-
-<summary>"npm run develop" command not working</summary>
-
-Please read through the error message and identify the step that is failing.
-There should be an error message that will hopefully help guide you to the
-solution. If it doesn't, please copy and past _all_ of the output into a new
-issue on the project repository.
-
-</details>
-
-<!-- prettier-ignore-start -->
-[npm]: https://www.npmjs.com/
-[node]: https://nodejs.org
-[git]: https://git-scm.com/
-[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
-[mac-path]: http://stackoverflow.com/a/24322978/971592
-<!-- prettier-ignore-end -->
