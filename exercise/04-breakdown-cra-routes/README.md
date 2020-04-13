@@ -7,7 +7,7 @@
 [![Edit Pokedex-cra-app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/heuristic-mountain-e77n0?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
-//App.js
+//index.js
 import React from 'react'
 import { Router, Link } from '@reach/router'
 import { render } from 'react-dom'
