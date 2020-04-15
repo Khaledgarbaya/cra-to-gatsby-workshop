@@ -1,70 +1,69 @@
-<h1 align="center">04 Use plugins in Gatsby</h1>
+<h1 align="center">05 Use plugins in Gatsby</h1>
 
-> Setup the simplest Gatsby project
+> How to install and configure plugins in Gatsby
 
-## System Requirements
+## What is a Gatsby Plugin
 
-- [git][git] v2 or greater
-- [NodeJS][node] v10 or greater
-- [npm][npm] v5.2.0 or greater
+A Gatsby plugin is a Node package that uses the Gatsby APIs under the hood.
 
-All of these must be available in your `PATH`. To verify things are set up properly, you can run this:
+You can use a plugin to source data into your site, transform content or enhance the output of your site like adding google analytics etc...
 
-```shell
-git --version
-node --version
-npm --version
+Gatsby plugins can be categorized into 3 types:
+
+- A Gatsby Source plugin (e.g: gatsvy-source-contentful pulls data from Contentful)
+- A Gatsby Transformer Plugin (e.g: gatsby-transformer-remark convert markdown text to html)
+- A Gatsby Plugin (e.g: gatsby-plugin-google-analytics adds Google analytics in your site)
+
+## How to install and configure a plugin
+
+1. Install a plugin you can run the command `npm install plugin-name` e.g `npm install gatsby-source-contentful`.
+
+2. Add the plugin to your `gatsby-config.js` file
+
+```js
+module.exports = {
+  plugins: [
+    `plugin-name`,
+    {
+      resolve: `plugin-that-needs-config`,
+      options: {
+        param1: `value`
+      }
+    }
+  ]
+}
 ```
 
-If you have trouble with any of these, learn more about the PATH environment
-variable and how to fix it here for [windows][win-path] or
-[mac/linux][mac-path].
+e.g
 
-## Setup
-
-You may be able to work through the entire workshop in the browser. It requires
-absolutely no setup whatsoever, though people do sometimes have trouble with it
-working perfectly. However, if you would like to try it, go to
-[this codesandbox (TODO)](todo)
-
-If you'd rather be able to work through the workshop on your own computer, then
-follow the following instructions.
-
-## Installing dependencies
-
-```sh
-npm install
+```js
+module.exports = {
+  plugins: [
+    `gatsby-plugin-react-helmet`,// no options needed
+    {// options needed
+      resolve: `gatsby-source-contentful`,
+      options: {
+        space: `<space-id>`,
+        accessToken: `<access-token>`
+      }
+    }
+  ]
+}
 ```
 
-## Running the app
+## Exercise
 
-```sh
-npm run develop
+your job is to add the following plugins to your gatsby project:
+
+`gatsby-source-filesystem` with the options:
+```js
+options: {
+  name: `images`,
+  path: `${__dirname}/src/images`,
+},
 ```
 
-## Instruction
+`gatsby-transformer-sharp` and `gatsby-plugin-sharp` without any options.
 
-- Step 1
-- Step 2
-- more...
+After that you should be able to run your project without any issues and you can see an image rendered in your home page.
 
-## Troubleshooting
-
-<details>
-
-<summary>"npm run develop" command not working</summary>
-
-Please read through the error message and identify the step that is failing.
-There should be an error message that will hopefully help guide you to the
-solution. If it doesn't, please copy and past _all_ of the output into a new
-issue on the project repository.
-
-</details>
-
-<!-- prettier-ignore-start -->
-[npm]: https://www.npmjs.com/
-[node]: https://nodejs.org
-[git]: https://git-scm.com/
-[win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
-[mac-path]: http://stackoverflow.com/a/24322978/971592
-<!-- prettier-ignore-end -->
