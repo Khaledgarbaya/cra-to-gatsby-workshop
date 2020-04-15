@@ -66,4 +66,3 @@ options: {
 `gatsby-transformer-sharp` and `gatsby-plugin-sharp` without any options.
 
 After that you should be able to run your project without any issues and you can see an image rendered in your home page.
-
