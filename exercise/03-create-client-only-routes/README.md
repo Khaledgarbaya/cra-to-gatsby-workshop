@@ -18,16 +18,16 @@ Create a new page under `src/pages` called `app.js`.
 
 ```js
 // src/pages/app.js
-import React from "react"
-import { Router } from "@reach/router"
+import React from 'react'
+import { Router } from '@reach/router'
 
 const App = () => {
   return (
     <Layout>
       <Router basepath="/app">
-        // Add Profile and Details route here
-        // you can use inline components or create ones in seperate files
-        // e.g <MyComponent path='/app/mypath'>
+        {/*Add Profile and Details route here*/}
+        {/*you can use inline components or create ones in seperate files*/}
+        {/* e.g <MyComponent path='/app/mypath'> */}
       </Router>
     </Layout>
   )
