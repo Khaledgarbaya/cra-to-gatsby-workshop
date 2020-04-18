@@ -2,7 +2,7 @@
 
 > Create pages that only render at runtime in Gatsby
 
-Client-only routes will exist on the client only and will not correspond to index.html files in an app’s built assets.
+Client-only routes will exist on the client only and will not correspond to `html` files in an app’s built assets.
 
 ## How to create a client only page?
 
@@ -12,6 +12,22 @@ You can do that in two steps:
 
 2. Configure Gatsby to navigate to the client only routes.
 
+In your `gatsby-node.js` file
+
+```js
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+  // Only update the `/app` page.
+  if (page.path.match(/^\/app/)) {
+    // page.matchPath is a special key that's used for matching pages
+    // with corresponding routes only on the client.
+    page.matchPath = '/app/*'
+    // Update the page.
+    createPage(page)
+  }
+}
+```
+
 ## Exercise
 
 Create a new page under `src/pages` called `app.js`.
@@ -20,6 +36,9 @@ Create a new page under `src/pages` called `app.js`.
 // src/pages/app.js
 import React from 'react'
 import { Router } from '@reach/router'
+// Add Details Compoment
+
+//Add profile Component
 
 const App = () => {
   return (
@@ -27,7 +46,7 @@ const App = () => {
       <Router basepath="/app">
         {/*Add Profile and Details route here*/}
         {/*you can use inline components or create ones in seperate files*/}
-        {/* e.g <MyComponent path='/app/mypath'> */}
+        {/* e.g <Details path='/details'> */}
       </Router>
     </Layout>
   )

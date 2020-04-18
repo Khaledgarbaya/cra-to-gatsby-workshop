@@ -53,9 +53,9 @@ Inside a Gatsby project you may have some of the folowing folders/files:
 
 Most of the folders and files above are optional.
 
-A Gatsby project is mainly an npm project that has `gatsby`, `react` and `react-dom` as dependencies.
+A Gatsby project is mainly an npm project that has `gatsby`, `react` and `react-dom` as npm dependencies.
 
-the equivalante of `index.html` in a Gatsby project is an `index.js` file inside the pages folder.
+the equivalante of `index.html` in a Gatsby project is an `index.js` file inside the `src/pages` folder.
 
 For now you can add the following code in `index.js`
 
@@ -67,7 +67,7 @@ const IndexPage = () => <h1>Hello World!</h1>
 export default IndexPage
 ```
 
-To run the project you add an npm script in you package.js to run `gatsby develop`.
+To run the project you add an npm script in your package.json to run `gatsby develop`.
 Your job will be to create the simplest gatsby project manually from scratch inside the `start` folder using the information provided.The end result will be a project where you can run `npm run develop` and navigate to `localhost:8000` to `Hello World!` printed out.
 
 - > 💡 You can always check the Gatsby [docs](https://www.gatsbyjs.org/docs/gatsby-project-structure/) for the project structure

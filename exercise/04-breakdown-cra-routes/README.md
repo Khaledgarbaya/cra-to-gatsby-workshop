@@ -93,6 +93,6 @@ render(<Root />, document.getElementById('root'))
 
 ## Exercise
 
-Your job is to use what you learned in the previous exercises to conver this React app pages to a Gatsby app.
+Your job is to use what you learned in the previous exercises to convert this React app to a Gatsby app.
 
 > 💡 for the pages `app/profile` and `app/stats` they are specific to a logged in user and we'll add authentication to them later.

@@ -6,8 +6,8 @@
 
 Gatsby pages are created in different ways:
 
-- Gatsby core automatically turns React components in `src/pages` into pages
-- Creating Pages programatically using the `createPages` API in your site's `gatsby-node.js`
+- Automatically turns React components in `src/pages` into pages
+- Programatically using the `createPages` API in your site's `gatsby-node.js`
 - Using a Plugin That implement the `createPages` API
 
 ## How to list all the pages in a Gatsby site
@@ -105,7 +105,7 @@ We would like to pass some data to the page that we created programatically.
 in addition to `path` and `component` the `createPage` object config also has another property called `context`.
 It allows you to pass data to the to be created page. This data will then be available as a react prop called `pageContext`.
 
-Your job is to pass some data to use-page and render it. Make sure to restart the server to apply the new changes.
+Your job is to pass some data to the user-page and render it. Make sure to restart the server to apply the new changes.
 
 ### Extra Credit 2
 
@@ -132,6 +132,6 @@ Given the following data set
 ]
 ```
 
-your job is progrmatically create a page for every item in the array. for the path use the `slug` property and pass the name to page to render it later.
+Your job is progrmatically create a page for every item in the array. for the path use the `slug` property and pass the name to page to render it later.
 
 - > 💡 You can always check the Gatsby [docs](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/) for creating and modifing pages

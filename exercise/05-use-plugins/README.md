@@ -10,7 +10,7 @@ You can use a plugin to source data into your site, transform content or enhance
 
 Gatsby plugins can be categorized into 3 types:
 
-- A Gatsby Source plugin (e.g: gatsvy-source-contentful pulls data from Contentful)
+- A Gatsby Source plugin (e.g: gatsby-source-contentful pulls data from Contentful)
 - A Gatsby Transformer Plugin (e.g: gatsby-transformer-remark convert markdown text to html)
 - A Gatsby Plugin (e.g: gatsby-plugin-google-analytics adds Google analytics in your site)
 
@@ -39,8 +39,9 @@ e.g
 ```js
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,// no options needed
-    {// options needed
+    `gatsby-plugin-react-helmet`, // no options needed
+    {
+      // options needed
       resolve: `gatsby-source-contentful`,
       options: {
         space: `<space-id>`,
@@ -56,6 +57,7 @@ module.exports = {
 your job is to add the following plugins to your gatsby project:
 
 `gatsby-source-filesystem` with the options:
+
 ```js
 options: {
   name: `images`,
