@@ -59,53 +59,28 @@ variable and how to fix it here for [windows][win-path] or
 
 ## Setup
 
-You may be able to work through the entire workshop in the browser. It requires
-absolutely no setup whatsoever, though people do sometimes have trouble with it
-working perfectly. However, if you would like to try it, go to
-[this codesandbox](https://codesandbox.io/s/github/Khaledgarbaya/cra-to-gatsby-workshop)
-and you should be good to go.
+Follow the following instructions.
 
-[![Edit cra-to-gatsby-workshop](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Khaledgarbaya/cra-to-gatsby-workshop)
-
-If you'd rather be able to work through the workshop on your own computer, then
-follow the following instructions.
-
-## Installing dependencies
+### Installing dependencies
 
 ```sh
 npm install
 ```
 
-## Running the app
+### Running the app
 
 ```sh
 npm run develop
 ```
 
-## Running the tests
-
-```sh
-npm run test
-```
-
-## Troubleshooting
-
-<details>
-
-<summary>"npm run develop" command not working</summary>
-
-Please read through the error message and identify the step that is failing.
-There should be an error message that will hopefully help guide you to the
-solution. If it doesn't, please copy and past _all_ of the output into a new
-issue on the project repository.
-
-</details>
-
 ## Author
 
 👤 **Khaled Garbaya <kgarbaya@gmail.com>**
 
-- Website: https://khaledgarbaya.net
+Hi I am Khaled a software developer, a teacher, and an active open sorcerer. I am a long-time contributor to Gatsbyjs and been working with it since pre v1 version. I run the JAMstack Berlin meetup and a weekly digest newsletter about JAMstack over at [https://learnjamstack.com/](https://learnjamstack.com/)
+
+- Website: https://k4d.dev
+- Twitch: [https://twitch.tv/kgarbaya](https://twitch.tv/kgarbaya)
 - Twitter: [@khaled_garbaya](https://twitter.com/khaled_garbaya)
 - Github: [@Khaledgarbaya](https://github.com/Khaledgarbaya)
 
@@ -139,7 +114,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://khaledgarbaya.net"><img src="https://avatars1.githubusercontent.com/u/1156093?v=4" width="100px;" alt=""/><br /><sub><b>Khaled Garbaya</b></sub></a><br /><a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Code">💻</a> <a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Documentation">📖</a> <a href="#infra-Khaledgarbaya" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://k4d.dev"><img src="https://avatars1.githubusercontent.com/u/1156093?v=4" width="100px;" alt=""/><br /><sub><b>Khaled Garbaya</b></sub></a><br /><a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Code">💻</a> <a href="https://github.com/Khaledgarbaya/Moving from create-react-app to Gatsby/commits?author=Khaledgarbaya" title="Documentation">📖</a> <a href="#infra-Khaledgarbaya" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
