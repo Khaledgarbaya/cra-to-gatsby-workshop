@@ -53,7 +53,7 @@ variable and how to fix it here for [windows][win-path] or
 
 ## Setup
 
-Follow the following instructions.
+Navitgate to the `start` folder of the current exercise and follow these instructions.
 
 ### Installing dependencies
 
