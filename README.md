@@ -31,7 +31,13 @@
 
 ## Workshop Outline
 
-TBD
+- [exercise 1: Setup](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/01-setup-gatsby-project/start)
+- [exercise 2: Static Pages](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/02-create-static-pages/start)
+- [exercise 3: Clietn Only Routes](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/03-create-client-only-routes)
+- [exercise 4: Migrate CRA routes to Gatsby Pages](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/04-breakdown-cra-routes/start)
+- [exercise 5: Using Gatsby Plugins](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/05-use-plugins/start)
+- [exercise 6: Query Data](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/06-query-data/start)
+- [exercise 7: Build and deploy](https://github.com/Khaledgarbaya/cra-to-gatsby-workshop/tree/master/exercise/07-build-and-deploy)
 
 ## System Requirements
 
